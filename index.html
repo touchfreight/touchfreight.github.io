@@ -26,7 +26,21 @@
 
     <!-- ================== BEGIN ANGULAR JS ================== -->
      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
-     <!-- ================== END ANGULAR JS ================== -->
+    <!-- ================== END ANGULAR JS ================== -->
+
+    <!-- ================== BEGIN GOOGLE ANALYTICS  ================== -->
+     <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-58182709-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <!-- ================== END GOOGLE ANALYTICS  ================== -->
+    
+
 </head>
 
 
@@ -35,7 +49,7 @@
     <div id="page-container" class="fade">
         <!-- begin #header -->
         <div id="header" class="header navbar navbar-transparent navbar-fixed-top">
-            <!-- begin container -->
+            <!-- begin container -->-
             <div class="container">
                 <!-- begin navbar-header -->
                 <div class="navbar-header">
@@ -51,7 +65,6 @@
                         <span class="brand-logo"></span>
                         <span class="brand-text">
                             <span class="text-theme">TouchFreight</span> 
-                            <!-- Logo will replace this text in the upper left corner -->
                         </span>
                     </a>
                 </div>
@@ -619,7 +632,12 @@
                             <strong>TouchFreight, Inc.</strong><br />
                             2150 Shattuck Ave, 11th floor<br />
                             Berkeley, CA 94704<br />
-                            contact@touchfreight.com
+                            <script language="JavaScript">
+                            var username = "contact";
+                            var hostname = "touchfreight.com";
+                            var linktext = username + "@" + hostname ;
+                            document.write("<a href='" + "mail" + "to:" + username + "@" + hostname + "'>" + linktext + "</a>");
+                            </script>
                         </p>
                         <!-- <p>
                             <span class="phone">+11 (0) 123 456 78</span><br />
@@ -648,16 +666,16 @@
                                     <input type="text" class="form-control place" placeholder = "example@domain.com" />
                                 </div>
                             </div>
-                            <div class="form-group">
+                            <!-- <div class="form-group">
                                 <label class="control-label col-md-3">Message <span class="text-theme">*</span></label>
                                 <div class="col-md-9">
                                     <textarea class="form-control" rows="10"></textarea>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="form-group">
                                 <label class="control-label col-md-3"></label>
                                 <div class="col-md-9 text-left">
-                                    <button type="submit" class="btn btn-theme btn-block">Send Message</button>
+                                    <button type="submit" class="btn btn-theme btn-block">Sign up for Beta Testing</button>
                                 </div>
                             </div>
                         </form>
