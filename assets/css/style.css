@@ -378,6 +378,7 @@ body.page-navbar-fixed-top-sm {
 .content.has-bg .content-title:after {
     background: #fff;
 }
+<style type="text/css">
 .content.has-bg .content-bg:before {
     content: '';
     background: url(../img/content-bg-cover.png);
@@ -404,6 +405,8 @@ body.page-navbar-fixed-top-sm {
 .content.has-bg h6 {
     color: #fff;
 }
+
+
 
 
 
